@@ -1,15 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import App from './App';
-import { BrowserRouter } from 'react-router-dom';
+// Import any other components if necessary
+import './index.css'; // Adjust according to your CSS file location
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>
+  <Router>
+    <Routes>
+      <Route path="/" element={<App />} />
+      {/* Add additional routes here */}
+    </Routes>
+  </Router>
 );
