@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import jsPDF from 'jspdf';
-import Item from './components/Item'; // Ensure this path is correct
+import Item from './components/item'; // Ensure this path is correct
 import './styles.css'; // Import your CSS file
 
 const App = () => {
